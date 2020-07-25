@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <div class="left"></div>
+        <div class="right"></div>
+        </div>
+        <img src="./pics/nike-logo-png-download-nike-logo-png-images-transparent-gallery-advertisement-1024.png" alt="logo" id="first_logo">
+    </div>
+    <div class="banner">
+    <div class="nav">
+        <div class="logo">
+            <img src="./pics/nike-logo-png-download-nike-logo-png-images-transparent-gallery-advertisement-1024.png" alt="logo">
+        </div>
+        <div class="menu-links">
+            <ul>
+                <li>Home</li>
+                <li>Shop</li>
+                <li>About</li>
+            </ul>
+        </div>
+        <div class="scroll">
+            <h2>scroll</h2>
+        </div>
+    </div>
+    <div class="text">
+        <h1>sneakers</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo officia, amet eius, unde doloribus illo quia autem culpa voluptates eos et perferendis qui necessitatibus.</p>
+    </div>
+    <div class="wr">
+    <div class="circle-wrapper">
+        <div class="circle-thin">
+        </div>
+        <div class="circle-rotate">
+
+        </div>
+    </div>
+</div>
+<div class="colors">
+    <h1>Colors:</h1>
+    <div id="red"></div>
+    <div id="blue"></div>
+    
+</div>
+</div>
+<script src="./js/preloader.js"></script>
+    <script type="text/javascript">
+    var banner=document.getElementsByClassName('banner')[0];
+
+    document.getElementById('red').addEventListener('click', function(event){
+  document.body.setAttribute('data-theme', 'red');
+  banner.style.backgroundImage='url("./pics/red_new-01.png")';
+});
+document.getElementById('blue').addEventListener('click', function(event){
+  document.body.setAttribute('data-theme', 'blue');
+  banner.style.backgroundImage='url("./pics/blue_new-01.png")';
+});
+    </script>
+    
+</body>
+</html>
