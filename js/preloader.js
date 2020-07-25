@@ -1,3 +1,4 @@
+window.onload=function(){
 TweenMax.to("#first_logo",2,{
     delay: 1,
     y: -500,
@@ -30,4 +31,5 @@ TweenMax.from(".nav",2,{
     opacity:0,
     ease: Expo.easeInOut
   });
+}
 
